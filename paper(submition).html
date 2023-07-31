@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission - Cybersecurity Conference</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body  style="background-color:rgb(0, 0, 0);">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://abesit.edu.in/"><img src="confrence.png" width="50px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="File.1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="File.1.html" >Speaker</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/Register.html">Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="rules(test).html">Rules and Regulations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactus.html" >Contact Us</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex">
+              
+              <button class="btn btn-outline-success"  style="color: aquamarine;" type="herf"><a href="Payment.html" style="text-decoration: none; color:green;">Payment></a></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-4" style="background-color:rgb(1, 1, 60); color:aliceblue;">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-4">Paper Submission</h1>
+                        <form id="paperSubmissionForm">
+                            <div class="mb-3">
+                                <label for="paperTitle" class="form-label">Paper Title</label>
+                                <input type="text" class="form-control" id="paperTitle" name="paperTitle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="authors" class="form-label">Authors</label>
+                                <input type="text" class="form-control" id="authors" name="authors" required>
+                                <div class="form-text">List all authors separated by commas.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="affiliations" class="form-label">Affiliations</label>
+                                <input type="text" class="form-control" id="affiliations" name="affiliations" required>
+                                <div class="form-text">List the affiliations of each author separated by commas, corresponding to
+                                    the order of authors.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="abstract" class="form-label">Abstract</label>
+                                <textarea class="form-control" id="abstract" name="abstract" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="keywords" class="form-label">Keywords</label>
+                                <input type="text" class="form-control" id="keywords" name="keywords" required>
+                                <div class="form-text">List keywords for your paper separated by commas.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="paperFile" class="form-label">Upload Paper (PDF only)</label>
+                                <input type="file" class="form-control" id="paperFile" name="paperFile" accept=".pdf" required>
+                            </div>
+                            <div class="text-center">
+                                    <button type="submit" class="btn btn-primary" onclick="ab()">Submit Paper</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <footer class="footer bg-dark text-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Us</h5>
+                    <p>A Cyber Conference Website.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="File.1.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: info@example.com</li>
+                        <li>Phone: +1 (123) 456-7890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-icons" style="text-align: center;">
+              <a href="https://www.instagram.com/your_instagram_username" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/your_twitter_username" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <p style="text-align:center"> &#169; Website by Shubham</p>
+    </footer>
+    
+    </div>
+    <script>
+        function ab(){
+        window.alert("Your Paper have been submitted sucessfully");
+        }
+      </script>
+</body>
+
+</html>

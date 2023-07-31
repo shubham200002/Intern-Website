@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Conference Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://abesit.edu.in/"><img src="confrence.png" width="50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="File.1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#XYZ" >Speaker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Register.html">Registration</a>
+          </li>
+
+         
+          <li class="nav-item">
+            <a class="nav-link active" href="contactus.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex">
+          
+          <button class="btn btn-outline-success"  style="color: aquamarine;" type="herf"><a href="Payment.html" style="text-decoration: none; color:green;">Payment></a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<body style="background-color: rgb(5, 3, 71);">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img style=" width: 100%;; height: 10%;" src="Payment SS.png" alt="topbg" >
+                        <h3 class="card-title text-center mb-4">Conference Payment</h3>
+                        <form id="paymentForm" action="/process_payment" method="post">
+                            <div class="mb-3">
+                             <label for="blog_content">Currency:</label>
+                             &nbsp;
+                            <input name="currency"  id="currency" type="radio" value="INR" checked="checked" />&nbsp;&nbsp;INR&nbsp;&nbsp;        
+                            <input name="currency" id="currency" type="radio" value="USD" />&nbsp; USD &nbsp;
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Amount (USD):</label>
+                                <input type="number" id="amount" name="amount" min="1" step="0.01" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Phone:</label>
+                                <input type="text" id="Number" name="Number" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Country" class="form-label">Country:</label>
+
+                            <select name="country" class="form_list" id="country" required>
+                                <option  value="0">Choose Country</option>
+                                           <option  value="1#Afghanistan">Afghanistan</option>
+                                           <option  value="3#Algeria">Algeria</option>
+                                           <option  value="4#American Samoa">American</option>
+                                           <option  value="71#Finland">Finland</option>
+                                           <option  value="72#France">France</option>
+                                           <option  value="73#French Guiana">French Guiana</option>
+                                           <option  value="74#French Polynesia">French Polynesia</option>
+                                           <option  value="75#French Southern Territories">French Southern Territories</option>
+                                           <option  value="76#Gabon">Gabon</option>
+                                           <option  value="77#Gambia">Gambia</option>
+                                           <option  value="78#Georgia">Georgia</option>
+                                           <option  value="79#Germany">Germany</option>
+                                           <option  value="80#Ghana">Ghana</option>
+                                           <option  value="81#Gibraltar">France</option>
+                                           <option  value="82#Greece">Greece</option>
+                                           <option  value="83#Greenland">Greenland</option>
+                                           <option  value="161#Panama">India</option>
+                                           <option  value="194#South Africa">South Africa</option>
+                                           <option  value="196#Spain">Spain</option>
+                                           <option  value="197#Sri Lanka">Sri Lanka</option>
+                     
+                                         </select>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="State" class="form-label">State:</label>
+                                <input type="text" id="State" name="State" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="City" class="form-label">City:</label>
+                                <input type="text" id="City" name="City" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Address" class="form-label">Address:</label>
+                                <input type="text" id="Address" name="Address" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number:</label>
+                                <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="expiry" class="form-label">Expiry Date:</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" class="form-control" required>
+                                </div>
+                                <div class="col">
+                                    <label for="cvv" class="form-label">CVV:</label>
+                                    <input type="text" id="cvv" name="cvv" class="form-control" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="ab()">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <footer class="footer bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>About Us</h5>
+                        <p>A Cyber Conference Website.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="File.1.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: info@example.com</li>
+                            <li>Phone: +1 (123) 456-7890</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-icons" style="text-align: center;">
+                  <a href="https://www.instagram.com/your_instagram_username" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com/your_twitter_username" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="fab fa-facebook"></i></a>
+              </div>
+            </div>
+            <p style="text-align:center"> &#169; Website by Shubham</p>
+          </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            window.alert("You have been Registered");
+        <script>
+            function ab(){
+                window.alert("Your Payment is Processing");
+            }
+        </script>
+</body>
+</html>
